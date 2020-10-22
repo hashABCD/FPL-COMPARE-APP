@@ -58,7 +58,7 @@ def get_entry_data(entry_id):
 entry_list=[1,5]
 
 def total_points_plotter(entry_ids=entry_list):
-    plt.figure(figsize=(8,4))
+    fig=plt.figure(figsize=(8,4))
     plt.title("TOTAL POINTS")
     for i,entry in enumerate(entry_ids):
         personal_data=get_entry_personal_data(entry)
@@ -81,7 +81,7 @@ def total_points_plotter(entry_ids=entry_list):
     
     
 def gw_points_plotter(entry_ids=entry_list):
-    plt.figure(figsize=(8,4))
+    fig=plt.figure(figsize=(8,4))
     plt.title("GAMEWEEK POINTS")
     for i,entry in enumerate(entry_ids):
         personal_data=get_entry_personal_data(entry)
@@ -105,7 +105,7 @@ def gw_points_plotter(entry_ids=entry_list):
     
     
 def gw_rank_plotter(entry_ids=entry_list):
-    plt.figure(figsize=(8,4))
+    fig=plt.figure(figsize=(8,4))
     plt.title("GAMEWEEK RANK")
     for i,entry in enumerate(entry_ids):
         personal_data=get_entry_personal_data(entry)
@@ -128,7 +128,7 @@ def gw_rank_plotter(entry_ids=entry_list):
     st.pyplot(fig)
     
 def overall_rank_plotter(entry_ids=entry_list):
-    plt.figure(figsize=(8,4))
+    fig=plt.figure(figsize=(8,4))
     plt.title("OVERALL RANK")
     for i,entry in enumerate(entry_ids):
         personal_data=get_entry_personal_data(entry)
