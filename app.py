@@ -77,7 +77,7 @@ def total_points_plotter(entry_ids=entry_list):
     plt.legend()
     plt.xticks(gw)
     plt.tight_layout()
-    st.pyplot()
+    st.pyplot(fig)
     
     
 def gw_points_plotter(entry_ids=entry_list):
@@ -101,7 +101,7 @@ def gw_points_plotter(entry_ids=entry_list):
     plt.legend()
     plt.xticks(gw)
     plt.tight_layout()
-    st.pyplot()
+    st.pyplot(fig)
     
     
 def gw_rank_plotter(entry_ids=entry_list):
@@ -125,7 +125,7 @@ def gw_rank_plotter(entry_ids=entry_list):
     plt.legend()
     plt.xticks(gw)
     plt.tight_layout()
-    st.pyplot()
+    st.pyplot(fig)
     
 def overall_rank_plotter(entry_ids=entry_list):
     plt.figure(figsize=(8,4))
@@ -148,7 +148,7 @@ def overall_rank_plotter(entry_ids=entry_list):
     plt.legend()
     plt.xticks(gw)
     plt.tight_layout()
-    st.pyplot()
+    st.pyplot(fig)
     
     
 page_bg_img = '''
