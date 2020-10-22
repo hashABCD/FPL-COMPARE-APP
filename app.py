@@ -9,6 +9,8 @@ import pandas as pd
 import requests 
 import numpy as np
 import json
+import warnings
+warnings.filterwarnings('ignore')
 
 import matplotlib.pyplot as plt
 import seaborn as sns
